@@ -1,0 +1,87 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 7%;
+    height: 60%;
+    background: #333333;
+    border-radius: 20px;
+  }
+  
+  .light {
+    width: 70px;
+    height: 70px;
+    margin: 10px 20px;
+    background: lightgrey;
+    border-radius: 100%;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  .red {
+    animation-name: redColor;
+    
+  }
+  
+  .yellow {
+    animation-name: yellowColor;
+  }
+  
+  .green {
+    animation-name: greenColor;
+  }
+  
+  /*Red Light Animation*/
+  @keyframes redColor{
+        0%{
+            background-color: red;
+        }
+        33%{
+            background-color: red;
+        }
+        34%{
+            background-color: grey;
+        }
+        100%{
+            background-color: grey;
+        }
+      }
+  
+   /*Yellow Light Animation*/
+  @keyframes yellowColor{
+        0%{
+            background-color: grey;
+        }
+        33%{
+            background-color: grey;
+        }
+        34%{
+            background-color: yellow;
+        }
+        66%{
+            background-color: yellow;
+        }
+        67%{
+            background-color: grey;
+        }
+        100%{
+            background-color: grey;
+        }
+    }
+    /*Green Light Animation*/
+    @keyframes greenColor{
+        0%{
+            background-color: grey;
+        }
+        66%{
+            background-color: grey;
+        }
+        67%{
+            background-color: green;
+        }
+        100%{
+            background-color: green;
+        }
+      }

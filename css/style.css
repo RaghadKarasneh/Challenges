@@ -1,0 +1,12 @@
+body{
+    background-image: url('../background.jfif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+ol li{
+    font-size: 25px;
+    line-height: 2;
+}
+ol li a{
+    text-decoration: none;
+}
